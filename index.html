@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Hello World Demo </title>
+  <!-- add the font awesome link here -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" type="text/css" />
+  <link href="https://fonts.googleapis.com/css2?family=Spartan:wght@300\;400;600&display=swap" rel="stylesheet">
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link rel="icon"href="https://awsprodemailassets.s3.amazonaws.com/0ae1dbc4-e5aa-46c3-8aed-55995aabf5b7/webexIcon_roundEdge_4181441409677811.png" type="image/x-icon!">
+</head>
+<body>
+	<header>
+    <nav class="navMenu" id="myNavMenu">
+      <a href="index.html"><img id="logo" src="https://awsprodemailassets.s3.amazonaws.com/0ae1dbc4-e5aa-46c3-8aed-55995aabf5b7/webexIcon_roundEdge_4181441409677811.png" alt="Webex logo"></a>
+    </nav>
+  </header>	
+  
+  <!-- MAIN BODY CONTAINER -->
+  <div id="container">
+    <br>
+    <img src="https://qaemailmedia.s3.amazonaws.com/63eb11d9-6f89-4c95-8608-b6580379f97f/communication_2993148956236543.png" style="width:100px;display:block;margin-left:auto;margin-right:auto;">
+    <div class="short"></div>
+    <p class="offsetTitles"><b>Hello World Demo</b></p>
+
+    <!-- WHEN NO ORDER IS QUERIED -->
+    <div id="defaultDiv">
+      <div id="completeDiv">
+        <div class="text">
+          <p>Please choose:<br>
+            <!-- CHANGE HERE -->
+            <span class="subFont">&nbsp;&nbsp;<i class="fas fa-caret-right green"></i>&nbsp;&nbsp;<b>channel preference</b> - SMS demo currently supports UK only</span>
+            <br>
+            <br>
+            Then enter:<br>
+            <span class="subFont">&nbsp;&nbsp;<i class="fas fa-caret-right green"></i>&nbsp;&nbsp;<b>mobile number</b> (international format, e.g. 447...)<br>
+            &nbsp;&nbsp;<i class="fas fa-caret-right green"></i>&nbsp;&nbsp;<b>your name</b>
+            <br>
+            & <span class="mobhide">click</span><span class="mobShow">tap</span> <b>Enter</b> to complete<br></p>
+        </div>
+        <div class="formBox">
+          <select id="channels" name="channels">
+            <option value="wa">WhatsApp</option>
+            <option value="sms">SMS</option>
+          </select>
+          <p>&nbsp;</p>
+          <input type="tel" id="number-enter" name="Number" class="form" placeholder="Number (447...)">
+          <p>&nbsp;</p>
+          <input type="text" id="name-enter" name="Name" class="form" placeholder="Your name">
+          <p>&nbsp;<a href="#" id="form-enter" >Enter</a><br></p>
+        </div>
+      </div>
+      <div id="postDiv" style="display:none;">
+        <div class="text" style="display:flex;align-items:center;justify-content:center;">
+          <p>Thanks - <b>we've sent a message to your phone</b><br><br>Just refresh the page to run the demo again</p>
+        </div>
+      </div>
+    </div>
+  
+    <div class="clear"></div>
+    <br>
+
+  </div>	
+  <footer>
+    <span>
+      <p>Webex CPaaS Team &nbsp
+      <a href="https://cpaas.webex.com/" target="_blank"><i class="fas fa-globe"></i></a>
+      &nbsp
+      <a href="https://www.linkedin.com/company/webex-cpaas-solutions/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+      </p>
+    </span>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+  <script src="script.js"></script>
+</body>
+</html>
